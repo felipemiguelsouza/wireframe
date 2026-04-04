@@ -12,11 +12,6 @@ a {
     transition: 0.3s;
 }
 
-a:hover {
-    color: white;
-    text-shadow: 0 0 5px rgba(255, 0, 255, 0.7);
-}
-
 /* ===== LAYOUT GRID ===== */
 .container {
     display: grid;
@@ -51,6 +46,11 @@ a:hover {
 
     /* efeitos */
     box-shadow: 0 5px 15px rgba(170, 0, 162, 0.712);
+}
+
+.header a:hover {
+    color: white;
+    text-shadow: 0 0 5px rgba(255, 0, 255, 0.7);
 }
 
 /* ===== MENU ===== */
@@ -127,6 +127,67 @@ a:hover {
 .produto:hover {
     transform: scale(1.02);
     transition: 1.5s;
+}
+
+/* ===== PRODUTO DETALHE ===== */
+.compra {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* imagem */
+.descricao img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* hover */
+.descricao:hover {
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+
+/* ficha técnica */
+.ficha_tecnica {
+    background-color: rgba(0, 0, 0, 0.219);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.ficha_tecnica p {
+    font-family: Cambria, Georgia, serif;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+
+    background-color: purple;
+    border-radius: 5px;
+    color: white;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: rgb(180, 0, 180);
+}
+
+@media (max-width: 768px) {
+    .compra {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .descricao img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* ===== FOOTER ===== */
