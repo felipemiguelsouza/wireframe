@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            CHECKOUT <a href="index.html">VOLTAR</a>
+        </div>
+
+        <div class="menu">
+            MENU
+            <p>Finalize sua compra com segurança</p>
+        </div>
+
+        <div class="conteudo">
+            <h2>Finalizar Compra</h2>
+
+            <form action="processa.php" method="POST" class="checkout">
+
+                <div class="formulario">
+
+                    <h3>Dados do Cliente</h3>
+                    <input type="text" name="nome" placeholder="Nome" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="telefone" placeholder="Telefone">
+
+                    <h3>Endereço</h3>
+                    <input type="text" name="endereco" placeholder="Endereço" required>
+                    <input type="text" name="cidade" placeholder="Cidade">
+                    <input type="text" name="cep" placeholder="CEP">
+
+                    <h3>Pagamento</h3>
+                    <select name="pagamento">
+                        <option>Cartão</option>
+                        <option>Pix</option>
+                        <option>Boleto</option>
+                    </select>
+
+                </div>
+
+                <div class="resumo_checkout">
+                    <h3>Resumo</h3>
+                    <p>Shape Santa Cruz</p>
+                    <p>Total: R$ 199,90</p>
+
+                    <button type="submit" class="botao">Finalizar Pedido</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="footer">
+            © Todos os direitos reservados - Felipe Miguel 2026 - Fatec Cotia
+        </div>
+
+    </div>
+</body>
+
+</html>
