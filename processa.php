@@ -11,27 +11,38 @@ $pagamento = $_POST['pagamento'];
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <title>Pedido Recebido</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background-color: #2b0030; color: white; font-family: Arial; padding: 20px;">
+<body>
 
-    <h1>Pedido realizado com sucesso!</h1>
+    <div class="sucesso-container">
 
-    <h2>Dados do Cliente:</h2>
-    <p><strong>Nome:</strong> <?php echo $nome; ?></p>
-    <p><strong>Email:</strong> <?php echo $email; ?></p>
-    <p><strong>Telefone:</strong> <?php echo $telefone; ?></p>
+        <div class="sucesso-card">
 
-    <h2>Endereço:</h2>
-    <p><?php echo $endereco; ?> - <?php echo $cidade; ?> (<?php echo $cep; ?>)</p>
+            <h1>Pedido realizado com sucesso! 🎉</h1>
 
-    <h2>Pagamento:</h2>
-    <p><?php echo $pagamento; ?></p>
+            <h2>Dados do Cliente</h2>
+            <p><strong>Nome:</strong> <?php echo $nome; ?></p>
+            <p><strong>Email:</strong> <?php echo $email; ?></p>
+            <p><strong>Telefone:</strong> <?php echo $telefone; ?></p>
+
+            <h2>Endereço</h2>
+            <p><?php echo $endereco; ?> - <?php echo $cidade; ?> (<?php echo $cep; ?>)</p>
+
+            <h2>Pagamento</h2>
+            <p><?php echo $pagamento; ?></p>
+
+            <a href="index.html" class="botao">Voltar para loja</a>
+
+        </div>
+
+    </div>
 
 </body>
 

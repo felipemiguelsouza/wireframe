@@ -53,6 +53,13 @@ a {
     text-shadow: 0 0 5px rgba(255, 0, 255, 0.7);
 }
 
+.logo {
+    height: 50px;
+    width: auto;
+    height: 50px;
+    filter: drop-shadow(0 0 5px purple);
+}
+
 /* ===== MENU ===== */
 .menu {
     /* layout */
@@ -170,8 +177,10 @@ a {
     border-radius: 5px;
     color: white;
     transition: 0.3s;
-    border: none;        /* resolve o estilo padrão do button */
-    cursor: pointer;     /* deixa clicável como botão */
+    border: none;
+    /* resolve o estilo padrão do button */
+    cursor: pointer;
+    /* deixa clicável como botão */
 }
 
 .botao:hover {
@@ -350,4 +359,35 @@ a {
         align-items: center;
         text-align: center;
     }
+}
+
+/*Estilização do PHP*/
+
+.sucesso-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sucesso-card {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    width: 400px;
+
+    box-shadow: 0 0 20px rgba(170, 0, 162, 0.7);
+}
+
+.sucesso-card h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sucesso-card h2 {
+    margin-top: 20px;
+}
+
+.sucesso-card p {
+    margin: 5px 0;
 }
