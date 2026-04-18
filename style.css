@@ -597,7 +597,6 @@ a:hover {
     font-weight: 300;
     transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
     border-radius: 0;
-    -webkit-appearance: none;
     width: 100%;
 }
 .formulario input::placeholder { color: var(--white-muted); font-size: 13px; }
